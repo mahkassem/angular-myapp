@@ -1,0 +1,6 @@
+<div class="login-form">
+  <input type="text" [(ngModel)]="name">
+  <input type="password" [(ngModel)]="password">
+  <p [style.color]="error ? 'red' : 'green'">{{ message }}</p>
+  <button (click)="login()">Login</button>
+</div>

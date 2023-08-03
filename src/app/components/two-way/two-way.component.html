@@ -1,0 +1,8 @@
+<ul>
+  <ng-template *ngFor="let n of mydata" [NotZero]="n">
+    <li HighlightNumber>
+      {{ n }}
+    </li>
+  </ng-template>
+</ul>
+<button (click)="changeData()">Change me</button>
